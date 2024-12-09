@@ -27,16 +27,22 @@
         </iframe>
     </div>
 
-    <div id="Ajouter un cours" class="content hidden">
+    <div id="Ajouter-un-cours" class="content">
         <h2>Ajouter un cours</h2>
-        <form>
-            <label for="className">Class Name:</label><br>
-            <input type="text" id="className" name="className"><br><br>
-            <label for="classDate">Class Date:</label><br>
-            <input type="date" id="classDate" name="classDate"><br><br>
-            <label for="classTime">Class Time:</label><br>
-            <input type="time" id="classTime" name="classTime"><br><br>
-            <input type="submit" value="Add Class">
+        <form action="https://formspree.io/projetecolo@gmail.com" method="POST">
+            <label for="Nom">Nom:</label><br>
+            <input type="text" id="Nom" name="Nom" required><br><br>
+
+            <label for="Prénom">Prénom:</label><br>
+            <input type="text" id="Prénom" name="Prénom" required><br><br>
+
+            <label for="Date du cours de soutien proposé">Date du cours de soutien proposé:</label><br>
+            <input type="date" id="Date du cours de soutien proposé" name="Date du cours de soutien proposé" required><br><br>
+            
+            <label for="Heure du cours proposé">Heure du cours proposé:</label><br>
+            <input type="time" id="Heure du cours proposé" name="Heure du cours proposé" required><br><br>
+
+            <input type="submit" value="Envoyer demande">
         </form>
     </div>
 
