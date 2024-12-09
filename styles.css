@@ -19,7 +19,7 @@ body {
 .menu {
     display: flex;
     justify-content: space-around;
-    width: 3%;
+    width: 1%;
 }
 .menu a {
     text-decoration: none;
