@@ -34,6 +34,7 @@ body {
 }
 .content {
     padding: 2vh 2vw;
+    align-items: center;
 }
 .hidden {
     display: none;
