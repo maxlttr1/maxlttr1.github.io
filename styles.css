@@ -1,16 +1,16 @@
 body {
     font-family: Arial, sans-serif;
 }
+.brand {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #333;
+}
 .menu {
     display: flex;
     justify-content: space-around;
     background-color: #f8f8f8;
     padding: 10px;
-}
-.menu .brand {
-    font-size: 1.5em;
-    font-weight: bold;
-    color: #333;
 }
 .menu a {
     text-decoration: none;
