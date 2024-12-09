@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda Management</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .menu {
+            display: flex;
+            justify-content: space-around;
+            background-color: #f8f8f8;
+            padding: 10px;
+        }
+        .menu a {
+            text-decoration: none;
+            color: #333;
+            padding: 10px 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .menu a:hover {
+            background-color: #ddd;
+        }
+        .content {
+            padding: 20px;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="menu">
+        <a href="#" onclick="showSection('google-calendar')">Google Calendar</a>
+        <a href="#" onclick="showSection('add-class')">Add Class</a>
+    </div>
+
+    <div id="google-calendar" class="content">
+        <h2>Google Calendar</h2>
+        <iframe src="https://calendar.google.com/calendar/embed?src=YOUR_CALENDAR_ID" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+    </div>
+
+    <div id="add-class" class="content hidden">
+        <h2>Add Class</h2>
+        <form>
+            <label for="className">Class Name:</label><br>
+            <input type="text" id="className" name="className"><br><br>
+            <label for="classDate">Class Date:</label><br>
+            <input type="date" id="classDate" name="classDate"><br><br>
+            <label for="classTime">Class Time:</label><br>
+            <input type="time" id="classTime" name="classTime"><br><br>
+            <input type="submit" value="Add Class">
+        </form>
+    </div>
+
+    <script>
+        function showSection(sectionId) {
+            document.getElementById('google-calendar').classList.add('hidden');
+            document.getElementById('add-class').classList.add('hidden');
+            document.getElementById(sectionId).classList.remove('hidden');
+        }
+    </script>
+</body>
+</html>
